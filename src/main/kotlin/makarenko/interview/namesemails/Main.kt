@@ -1,5 +1,9 @@
 package makarenko.interview.namesemails
 
 fun main() {
-    println("Hello!")
+    val solver = Solver()
+    val result = solver.solve(System.`in`)
+    result.forEach {
+        println("${it.key} -> ${it.value}")
+    }
 }
