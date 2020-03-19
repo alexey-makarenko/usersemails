@@ -10,6 +10,8 @@ class DisjointSet {
     }
 
     fun makeSet(email: String) {
+        if (forest[email] != null)
+            return
         val node = Node()
         node.email = email
         node.parent = node
