@@ -1,9 +1,14 @@
 package makarenko.interview.namesemails
 
-fun main() {
-    val solver = Solver()
-    val result = solver.solve(System.`in`)
-    result.forEach {
-        println("${it.key} -> ${it.value}")
+class Main {
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = Solver()
+            val result = solver.solve(System.`in`)
+            result.forEach {
+                println("${it.key} -> ${it.value}")
+            }
+        }
     }
 }

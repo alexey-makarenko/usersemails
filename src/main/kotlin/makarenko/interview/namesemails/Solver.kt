@@ -9,7 +9,7 @@ class Solver {
         val merger = Merger()
         while (scan.hasNextLine()) {
             val nextLine: String = scan.nextLine()
-            val arrow = nextLine.findAnyOf(listOf("->")) ?: return emptyMap()
+            val arrow = nextLine.findAnyOf(listOf("->")) ?: return merger.calculate()
             val user = nextLine.substring(0, arrow.first).trim()
             val emailLine = nextLine.substring(arrow.first + 2, nextLine.length)
             val emails = emailLine.split(',').map { it.trim() }.toTypedArray()
