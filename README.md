@@ -7,4 +7,6 @@ JVM 1.8+
 gradlew test
 
 #### How to use:
-gradlew run
+gradlew jar
+
+java -jar ".\build\libs\names-emails-1.0-SNAPSHOT.jar" < input.txt
